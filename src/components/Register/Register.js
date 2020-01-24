@@ -39,7 +39,7 @@ class Register extends React.Component {
     });
     try {
       const user = await axios
-        .post('https://face-finder-123.herokuapp.com/register', body, config)
+        .post('https://face-finder-12.herokuapp.com/register', body, config)
         .then(res => res.data);
       // if (user.id) {
       this.props.loadUser(user);
@@ -87,7 +87,6 @@ class Register extends React.Component {
           </button>
         </form>
       </section>
-      
     );
   }
 }

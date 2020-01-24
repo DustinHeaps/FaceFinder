@@ -17,7 +17,7 @@ class Profile extends Component {
 
   handleChangePassword = e => {
     e.preventDefault();
-    fetch('https://face-finder-123.herokuapp.com/changepassword', {
+    fetch('https://face-finder-12.herokuapp.com/changepassword', {
       method: 'post',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
@@ -37,7 +37,7 @@ class Profile extends Component {
 
   handleDeleteProfile = e => {
     e.preventDefault();
-    fetch('https://face-finder-123.herokuapp.com/delete', {
+    fetch('https://face-finder-12.herokuapp.com/delete', {
       method: 'DELETE',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
@@ -75,7 +75,6 @@ class Profile extends Component {
           </button>
         </form>
       </div>
-      
     );
   }
 }

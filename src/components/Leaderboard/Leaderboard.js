@@ -10,7 +10,7 @@ class Leaderboard extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://face-finder-123.herokuapp.com/leaderboard')
+    fetch('https://face-finder-12.herokuapp.com/leaderboard')
       .then(response => response.json())
       .then(users => {
         this.setState({ topUsers: users });

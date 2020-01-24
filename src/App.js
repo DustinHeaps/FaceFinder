@@ -85,7 +85,7 @@ class App extends Component {
   onPictureSubmit = async () => {
     this.setState({ imageUrl: this.state.input });
     const resp = await axios
-      .post('https://face-finder-123.herokuapp.com/imageurl', {
+      .post('https://face-finder-12.herokuapp.com/imageurl', {
         input: this.state.input,
         headers: { 'Content-Type': 'application/json' }
       })
@@ -93,7 +93,7 @@ class App extends Component {
     console.log(resp);
 
     const count = await axios
-      .put('https://face-finder-123.herokuapp.com/image', {
+      .put('https://face-finder-12.herokuapp.com/image', {
         id: this.state.user.id,
         headers: { 'Content-Type': 'application/json' }
       })
